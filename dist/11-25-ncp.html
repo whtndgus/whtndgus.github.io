@@ -205,20 +205,55 @@
             <div class="col-12"><!--글 카드 탭 시작-->
               <div class="card mb-4">
                 <div class="card-header">
-                   설명 목록 상자
+                  리눅스 기본 명력어
                 </div>
                 <div class="card-body">
-                  <p>
-                    리눅스 기본 명력어<br>
-                    –파일 시스템 탐색 기본 명령어 -
+                  <p class="h4">–파일 시스템 탐색 기본 명령어 -</p>
                   </p>
                   <div class="bd-example">
                    <div class="row">
                      <dt class="col-sm-3">pwd</dt>
                      <dd class="col-sm-9">
-                      <p>pwd(Print Working Directory) 현재 보고있는 디렉토리의 절대적인 결로를 보여주는 명령어 입니다</p>
-                      <p>사용 예) vagrant@host1 ~ $ pwd => /home/vagrant</p>
+                      <p>·pwd(Print Working Directory) 현재 보고있는 디렉토리의 절대적인 결로를 보여주는 명령어 입니다</p>
+                      <p>·사용 예) vagrant@host1 ~ $ pwd => /home/vagrant</p>
                      </dd>
+                     
+                     <dt class="col-sm-3">cd</dt>
+                     <dd class="col-sm-9">
+                      <p>·cd(Change Directory) 터미널, 명령 프롬프트 등의 환경에서 보고있</p>
+                      <p>·사용방법 : cd , cd~ , cd .. , cd - , cd/(디렉토리 경로)</p>
+                      <p>·사용 예) vagrant@host1 / $ cd home => vagrant@host1 home $ <”home” 디렉토리로 이동></p>
+                     </dd>
+
+                     <dt class="col-sm-3">ls</dt>
+                     <dd class="col-sm-9">
+                      <p>·ls(list directory contents) 해당 디렉토리에 있는 파일들을 화면에 출력하여 준다</p>
+                      <p>·사용방법 : -a(숨김 파일및 폴더를 포함하여 보여준다) , -l(파일의 재단 상세정보를 함께 보여준다) , -h(-l에서 지정한 크기 등을 읽기 쉽게 출력한다), -al(디렉토리 내의 모든 파일의 상세정보를 출력한다)</p>
+                      <p>·[vagrant@host1 home]$ cd vagrant<br>
+                          [vagrant@host1 ~]$ ls -a<br>
+                          . .. .bash_history .bash_logout .bash_profile .bashrc git .ssh</p>
+                     </dd>
+
+                     <dt class="col-sm-3">file</dt>
+                     <dd class="col-sm-9">
+                      <p>·file 지정한 파일의 타입을 출력하는 명령어</p>
+                      <p>·사용방법 : -c(파일의 포맷을 검사하는 옵션) , -f(파일들을 한번에 확인하기 위해 목록파일을 만들어서 그 안의 모든파일을 합넌에 확인할 수 있다 ) , -m(지정된 매직파일로 대상파일을 확인)</p>
+                      <p>·사용 예) [vagrant@host1 ~]$ file git => git: directory</p>
+                     </dd>
+
+                     <dt class="col-sm-3">less</dt>
+                     <dd class="col-sm-9">
+                      <p>·리눅스 파일의 내용을 확인하는 명령어중 하나이다, 한페이지 마다 화면을 보여주기에 대용량 파일을 확인할 때 유용하다, 페이지는 닫는 단축키는 “q”</p>
+                      <p>·사용방법 : -c(필요시 전체화면 새로고침) , -s(연속되는 공백은 하나의 행으로 처리)</p>
+                      <p>·사용 예)
+                        [vagrant@host1 bitcamp-ncp]$ less a.txt<br>
+                        1111<br>
+                        2222<br>
+                        3333<br>
+                        b.txt (END)</p>
+                      <p>·</p>
+                     </dd>
+
                    </div>
                   </div>
                 </div>
